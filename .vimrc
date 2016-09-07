@@ -269,3 +269,9 @@ if !exists('g:neocomplete#keyword_patterns')
 endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+" 隠しファイルをデフォルトで表示させる
+ let NERDTreeShowHidden = 1
+
+ " デフォルトでツリーを表示させる
+ autocmd VimEnter * execute 'NERDTree'
